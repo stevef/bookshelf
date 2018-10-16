@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+<div class='row'>
+  <%= "Name: #{@cabinet.name}" %>
+</div>
+
+<div class='row'>
+  <%= "Library: #{@cabinet.library.name}" %>
+</div>  
+
+<%= link_to 'Edit', edit_cabinet_path(@cabinet) %> |
+<%= link_to 'Back', cabinets_path %>
